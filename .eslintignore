@@ -1,0 +1,6 @@
+**/Generated/**/*
+**/*.d.ts
+**/Webpack/*.js
+
+**/server.js
+**/server/**/*.js

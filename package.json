@@ -1,0 +1,76 @@
+{
+  "name": "ultimate-guitar",
+  "version": "1.0.0",
+  "description": "For ultimate-guitar",
+  "main": "index.js",
+  "scripts": {
+    "prod": "webpack --config Webpack/webpack.prod.config.js --display=minimal --progress",
+    "dev": "webpack-dev-server --config Webpack/webpack.dev.config.js --progress --color"
+  },
+  "author": "Yakovlev Mikhail",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts?(x)": [
+      "eslint"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "^15.5.7",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^5.1.1",
+    "redux": "3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/register": "^7.0.0",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-redux": "5.0.20",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "assets-webpack-plugin": "^3.9.12",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "cache-loader": "^3.0.1",
+    "case-sensitive-paths-webpack-plugin": "^2.1.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.5.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^4.0.1",
+    "husky": "^4.2.3",
+    "image-webpack-loader": "^6.0.0",
+    "imports-loader": "^0.7.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^10.0.7",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "1.14.3",
+    "redux-create-reducer": "^2.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "resolve-url-loader": "^3.0.1",
+    "terser-webpack-plugin": "^2.1.0",
+    "ts-loader": "6.0.3",
+    "typescript": "^3.5.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.1"
+  }
+}
